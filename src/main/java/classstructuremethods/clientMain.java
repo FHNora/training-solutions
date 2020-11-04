@@ -1,16 +1,23 @@
 package classstructuremethods;
 
+import java.util.Scanner;
+
 public class clientMain {
     public static void main(String[] args) {
         client client = new client ();
-        client.setName("John Doe");
-        System.out.println(client.getName());
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Kérem adja meg a nevét!");
+        client.setName(scanner.nextLine());
 
-        client.setYear(1980);
-        System.out.println(client.getYear());
+        System.out.println("Kérem adja meg a születési évét!");
+        client.setYear(scanner.nextInt());
+        scanner.nextLine();
 
-        client.setAddress("200 Main Street Phoenix 28700");
-        System.out.println(client.getAddress());
+        System.out.println("Kérem adja meg a lakcímét!");
+        client.setAddress(scanner.nextLine());
+
+        client.migrate("360 Marshall Road Phoenix 28700");
+        System.out.println("Költözés sikeres, új cím: " + client.getAddress());
 
     }
 }

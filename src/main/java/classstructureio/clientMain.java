@@ -1,12 +1,19 @@
 package classstructureio;
 
+import java.util.Scanner;
+
 public class clientMain {
 
     public static void main(String[] args) {
         client client = new client();
-        client.name = "John Doe";
-        client.year = 1980;
-        client.address = "200 Main Street Phoenix 85123";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Kérem adja meg a nevét!");
+        client.name = scanner.nextLine();
+        System.out.println("Kérem adja meg a születési évét!");
+        client.year = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Kérem adja meg a lakcímét!");
+        client.address = scanner.nextLine();
         System.out.println(client.name);
         System.out.println(client.year);
         System.out.println(client.address);
