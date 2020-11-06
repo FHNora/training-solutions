@@ -10,6 +10,8 @@ public class Employee {
 
     public Employee(int year, int month, int day, String name){
         this.name = name;
+        this.dateOfBirth = LocalDate.of(year, month, day);
+        this.beginEmployment = LocalDateTime.now();
     }
 
     public String getName() {
@@ -17,7 +19,7 @@ public class Employee {
     }
 
     public LocalDate getDateOfBirth() {
-        return getDateOfBirth();
+        return dateOfBirth;
     }
 
     public LocalDateTime getBeginEmployment() {
