@@ -25,6 +25,15 @@ public class IntroControl {
         } else return 0;
     }
 
+    public int calculateConsumption(int prev, int next){
+        if (prev < next){
+            return next-prev;
+        }
+        else {
+            return (9999-prev)+next;
+        }
+    }
+
     public void printNumbers(int max) {
         for (int i = 0; i <= max; i++) {
             System.out.println(i);

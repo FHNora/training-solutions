@@ -8,6 +8,8 @@ public class IntroControlMain {
         System.out.println(introControl.greetingJoe("Jane"));
         System.out.println(introControl.calculateBonus(2000000));
         System.out.println(" ");
+        System.out.println(introControl.calculateConsumption(10,2));
+        System.out.println(" ");
         introControl.printNumbers(5);
         System.out.println(" ");
         introControl.printNumbersBetween(3,6);
