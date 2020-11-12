@@ -12,6 +12,7 @@ public class statementMain {
         z = 8;
         System.out.println(z);
         boolean b = false;
+        System.out.println(b);
 
         if (x > y) {
             b = true;
@@ -19,7 +20,6 @@ public class statementMain {
         System.out.println(b);
 
         boolean c = false;
-
         if (b = true || z > 5){
             c = true;
         }

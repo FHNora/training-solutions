@@ -1,7 +1,7 @@
 package introcontrol;
 
 public class IntroControl {
-    public int substractTenIfGreaterThenTen(int number) {
+    public int subtractTenIfGreaterThenTen(int number) {
         if (number <= 10) {
             return number;
         } else return number - 10;
@@ -41,10 +41,8 @@ public class IntroControl {
     }
 
     public void printNumbersBetween(int min, int max) {
-        for (int i = 0; i <= max; i++) {
-            if (i >= min && i <= max) {
+        for (int i = min; i <= max; i++) {
                 System.out.println(i);
-            }
         }
     }
 
