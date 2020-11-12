@@ -10,5 +10,9 @@ public class ArrayMain {
         for (int i = 0; i < trueOrFalse.length; i++){
             System.out.println(trueOrFalse[i]);
         }
+
+        for (boolean isTrue : trueOrFalse){
+            System.out.println(isTrue);
+        }
     }
 }
