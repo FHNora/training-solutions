@@ -1,6 +1,7 @@
 package arrays;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class ArraysMain {
     public static String numberOfDaysAsString(){
@@ -8,7 +9,21 @@ public class ArraysMain {
         return Arrays.toString(numberOfDays);
     }
 
+    public static List<String> daysOfWeek(){
+        String [] daysOfWeek = {"hétfő", "kedd", "szerda", "csütörtök", "péntek", "szombat", "vasárnap"};
+        return Arrays.asList(daysOfWeek);
+    }
+
+    public static String multiplicationTableAsString(int size){
+        int [][] multiplicationTable = new int[size][size];
+        for (int [] numbers : multiplicationTable){
+            System.out.println(numbers);
+        }
+        return Arrays.toString(multiplicationTable);
+    }
+
     public static void main(String[] args) {
         System.out.println(numberOfDaysAsString());
+        System.out.println(daysOfWeek());
     }
 }
