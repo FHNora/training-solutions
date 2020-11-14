@@ -2,7 +2,12 @@ package finalmodifier;
 
 public class CircleCalculator {
 
-    private static final double PI = 3.14;
+    public static final double PI = 3.14;
+    private final double r;
+
+    public CircleCalculator(double r){
+        this.r = r;
+    }
 
     public double calculatePerimeter(double r){
         return 2 * PI * r;
