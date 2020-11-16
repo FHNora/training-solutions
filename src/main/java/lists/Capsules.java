@@ -7,6 +7,10 @@ public class Capsules {
 
     private ArrayList<String> colours;
 
+    public Capsules(){
+        colours = new ArrayList<>();
+    }
+
     public void addLast(String capsule){
         colours.add(capsule);
     }
