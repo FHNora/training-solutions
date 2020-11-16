@@ -2,9 +2,6 @@ package finalmodifier;
 
 public class CylinderCalculator {
 
-    public CylinderCalculator(double r){
-        this.r = r;
-    }
     public double calculateVolume(double r, int h){
         return CircleCalculator.PI * r * r * h;
     }
