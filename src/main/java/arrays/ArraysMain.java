@@ -25,5 +25,6 @@ public class ArraysMain {
     public static void main(String[] args) {
         System.out.println(numberOfDaysAsString());
         System.out.println(daysOfWeek());
+        System.out.println(multiplicationTableAsString(3));
     }
 }
