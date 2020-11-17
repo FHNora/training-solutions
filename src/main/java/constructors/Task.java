@@ -1,13 +1,12 @@
 package constructors;
 
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 
 public class Task {
     String title;
     String description;
     LocalDateTime startDateTime;
-    LocalTime duration;
+    int duration;
 
     public Task(String title, String description){
         this.title = title;
@@ -23,18 +22,18 @@ public class Task {
     }
 
     public LocalDateTime getStartDateTime(){
-        return startDateTime;
+        return start();
     }
 
-    public LocalTime getDuration() {
+    public int getDuration() {
         return duration;
     }
 
-    public void setDuration(LocalTime duration) {
+    public void setDuration(int duration) {
         this.duration = duration;
     }
 
-    public LocalDateTime start(LocalDateTime startDateTime){
-        this.startDateTime = LocalDateTime.now();
+    public LocalDateTime start(){
+        return LocalDateTime.now();
     }
 }
