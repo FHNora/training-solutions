@@ -23,8 +23,8 @@ public class Employee {
         return salary;
     }
 
-    public void setSalary(){
-        this.salary = salary;
+    public void setName(String name){
+        this.name = name;
     }
 
     public void raiseSalary(int raise){
