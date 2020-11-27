@@ -1,4 +1,4 @@
 package controlselection;
 
-public class DayInMonth {
+public class DayOfWeeks {
 }
