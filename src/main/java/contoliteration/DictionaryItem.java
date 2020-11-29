@@ -8,17 +8,19 @@ public class DictionaryItem {
 
     public DictionaryItem(String word, List<String> translations){
         this.word = word;
-        this.translations = addTranslations();
+        this.translations = addTranslations(translations);
     }
 
-    public List<String> addTranslations(String word, List<String> translations){
-        if (!translations.contains(word)){
-            translations.add(word);
+    public List<String> addTranslations(List<String> words){
+        for (String word : words) {
+            if (!translations.contains(word)) {
+                translations.add(word);
+            }
         }
         return translations;
     }
 
-    public String getWord() {
+    public String getWord(){
         return word;
     }
 

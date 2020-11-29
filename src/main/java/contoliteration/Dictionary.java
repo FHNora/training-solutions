@@ -8,6 +8,6 @@ public class Dictionary {
     }
 
     public List<String> findTranslations(String word){
-        
+
     }
 }
