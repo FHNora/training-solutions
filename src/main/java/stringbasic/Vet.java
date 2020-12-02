@@ -17,7 +17,7 @@ public class Vet {
     }
 
     public boolean areEquals(String pet, String pet2){
-        if (pet){
+        if (pet.equals(pet2)){
             return true;
         }
         return false;
