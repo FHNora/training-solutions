@@ -7,7 +7,7 @@ public class Patient {
 
     public Patient (String name, String socialSecurityNumber, int yearOfBirth){
 
-        if (name == ""){
+        if (name == null || name.equals("")){
           throw new IllegalArgumentException("Name is not given");
         }
         if (yearOfBirth < 1900){
