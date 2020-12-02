@@ -9,7 +9,7 @@ public class Vet {
 
     public List<String> add(String pet, List<String> pets){
         for (String p : pets){
-            if (!pets.contains(pet)){
+            if (!areEquals(p, pet)){
                 pets.add(pet);
             }
         }
@@ -17,10 +17,13 @@ public class Vet {
     }
 
     public boolean areEquals(String pet, String pet2){
-        if (pet.equals(pet2)){
+        if (pet){
             return true;
         }
         return false;
     }
 
+    public List<String> getPets() {
+        return pets;
+    }
 }
