@@ -11,4 +11,16 @@ public class Salesperson {
         this.amount = amount;
         this.target = target;
     }
+
+    public String getName(){
+        return name;
+    }
+
+    public int getAmount(){
+        return amount;
+    }
+
+    public int getTarget(){
+        return target;
+    }
 }
