@@ -24,7 +24,13 @@ public class BankAccount {
         return balance;
     }
 
-    public int withdraw(int balance, int amount){
-        
+    public int withdraw(int balance, int amount) {
+        balance += amount;
+        return balance;
+    }
+
+    public int deposit(int balance, int amount) {
+        balance -= amount;
+        return balance;
     }
 }
