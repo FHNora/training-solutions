@@ -11,7 +11,6 @@ public class MaxAgeCalculator {
         for (Trainer tr : trainers) {
             if (tr.getAge() > max) {
                 max = tr.getAge();
-                trainer = ;
             }
         }
         return trainer;
