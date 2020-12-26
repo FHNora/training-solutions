@@ -19,10 +19,6 @@ public class Student {
 
     }
 
-    public boolean equals(Object) {
-
-    }
-
     public String getName() {
         return name;
     }
