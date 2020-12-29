@@ -7,7 +7,7 @@ public class Mark {
     private Subject subject;
     private Tutor tutor;
 
-    public MarkType(MarkType markType, Subject subject, Tutor tutor){
+    public Mark(MarkType markType, Subject subject, Tutor tutor){
         this.markType = markType;
         this.subject = subject;
         this.tutor = tutor;
@@ -22,11 +22,12 @@ public class Mark {
     }
 
     public Tutor getTutor() {
+
         return tutor;
     }
 
     public String toString() {
-
+    return markType.toString() + subject.toString() + tutor.toString();
     }
 
 }
