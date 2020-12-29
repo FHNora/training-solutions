@@ -17,8 +17,13 @@ public class Tutor {
         return name;
     }
 
-    public boolean tutorTeachingSubject(Subject Subject) {
-
+    public boolean tutorTeachingSubject(Subject subject) {
+        for (Subject s : taughtSubjects) {
+            if (s.equals(subject)) {
+                return true;
+            }
+        }
+        return false;
     }
 
 }
