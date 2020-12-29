@@ -17,7 +17,7 @@ public class Tutor {
         return name;
     }
 
-    public boolean tutorTeachingSubject() {
+    public boolean tutorTeachingSubject(Subject Subject) {
 
     }
 

@@ -9,6 +9,7 @@ public class Subject {
     }
 
     public String getSubjectName() {
+
         return subjectName;
     }
 }
