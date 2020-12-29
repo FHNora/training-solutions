@@ -1,6 +1,7 @@
 package schoolrecords;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Student {
 
@@ -12,7 +13,14 @@ public class Student {
     }
 
     public double calculateAverage() {
+        double count = 0;
+        double average = 0;
 
+        for (Mark d : marks) {
+            if (d == marks) {
+                count ++;
+            }
+        }
     }
 
     public double calculateSubjectAverage(Subject subject) {
