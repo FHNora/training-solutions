@@ -13,14 +13,13 @@ public class Student {
     }
 
     public double calculateAverage() {
-        double max = 0;
-        double count = 0;
-        double average = 0;
+        int sum = 0;
+        int count = 0;
+        double average;
 
-        for (Mark d : marks) {
-            if (d == marks) {
-                count ++;
-            }
+        for (Mark a : marks) {
+            sum += a;
+            average = sum / count;
         }
         return average;
     }
@@ -34,15 +33,18 @@ public class Student {
     }
 
     public void grading(Mark mark) {
-
+        marks.add(mark);
     }
 
     private boolean isEmpty(String name) {
-
+        if (name == null || name == "") {
+            return true;
+        }
+        return false;
     }
 
     public String toString(){
-
+        return name.toString() + marks.toString();
     }
 
 }
