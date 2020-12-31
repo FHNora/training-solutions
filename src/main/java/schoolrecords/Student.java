@@ -13,6 +13,7 @@ public class Student {
     }
 
     public double calculateAverage() {
+        double max = 0;
         double count = 0;
         double average = 0;
 
@@ -21,6 +22,7 @@ public class Student {
                 count ++;
             }
         }
+        return average;
     }
 
     public double calculateSubjectAverage(Subject subject) {
