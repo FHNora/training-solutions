@@ -13,15 +13,12 @@ public class Student {
     }
 
     public double calculateAverage() {
-        int sum = 0;
-        int count = 0;
-        double average;
+        double sum = 0;
 
         for (Mark a : marks) {
-            sum += a;
-            average = sum / count;
+            sum += a.getMarkType().getValue();
         }
-        return average;
+        return (sum / marks.size());
     }
 
     public double calculateSubjectAverage(Subject subject) {
