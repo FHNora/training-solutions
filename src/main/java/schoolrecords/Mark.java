@@ -27,7 +27,7 @@ public class Mark {
     }
 
     public String toString() {
-    return markType.toString() + subject.toString() + tutor.toString();
+    return markType.getDescription() + "(" + markType.getValue() + ")";
     }
 
 }
