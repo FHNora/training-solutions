@@ -22,7 +22,16 @@ public class Student {
     }
 
     public double calculateSubjectAverage(Subject subject) {
+        double sum = 0;
+        int count = 0;
 
+        for (Mark s : marks) {
+            if (s.getSubject().getSubjectName().equals(subject.getSubjectName())) {
+                sum += s.getMarkType().getValue();
+                count ++;
+            }
+        }
+        return sum / count;
     }
 
     public String getName() {
