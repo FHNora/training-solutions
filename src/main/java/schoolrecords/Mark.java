@@ -27,7 +27,7 @@ public class Mark {
     }
 
     public String toString() {
-    return markType.getDescription() + "(" + markType.getValue() + ")";
+    return markType.getValue() + "(" + markType.getDescription() + ")";
     }
 
 }
