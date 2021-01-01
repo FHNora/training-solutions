@@ -38,7 +38,10 @@ public class ClassRecords {
     }
 
     private boolean isEmpty(String className) {
-
+        if (className == null || className == "") {
+            return true;
+        }
+        return false;
     }
 
     private String listStudentNames() {
