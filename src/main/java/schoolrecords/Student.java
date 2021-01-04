@@ -18,7 +18,7 @@ public class Student {
         for (Mark a : marks) {
             sum += a.getMarkType().getValue();
         }
-        return (sum / marks.size());
+        return Math.round((sum / marks.size()) * 100.0) / 100.0;
     }
 
     public double calculateSubjectAverage(Subject subject) {
@@ -31,7 +31,7 @@ public class Student {
                 count ++;
             }
         }
-        return sum / count;
+        return Math.round((sum / count) * 100.0) / 100.0;
     }
 
     public String getName() {
@@ -50,7 +50,11 @@ public class Student {
     }
 
     public String toString(){
-        return name.toString() + marks.toString();
+        String data = name + "marks: ";
+        for (Mark s : marks) {
+            data += s.getSubject().getSubjectName() + ": " + s.toString() + " ";
+        }
+        return data.trim();
     }
 
 }
