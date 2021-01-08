@@ -2,9 +2,11 @@ package immutable;
 
 public class Satellite {
 
-    private Satellite satellite;
-    private final Celestialcordinates destinationCoordinates;
+    private final CelestialCoordinates destinationCoordinates;
     private String registerIdent;
 
-    public
+    public Satellite(CelestialCoordinates destinationCoordinates, String registerIdent) {
+        this.destinationCoordinates = destinationCoordinates;
+        this.registerIdent = registerIdent;
+    }
 }
