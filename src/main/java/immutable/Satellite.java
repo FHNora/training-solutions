@@ -9,4 +9,8 @@ public class Satellite {
         this.destinationCoordinates = destinationCoordinates;
         this.registerIdent = registerIdent;
     }
+
+    public void modifyDestination(CelestialCoordinates diff) {
+        
+    }
 }
