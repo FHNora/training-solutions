@@ -2,7 +2,7 @@ package methodstructure;
 
 public enum BmiCategory {
 
-    UNDERWEIGHT(< 18.5), OVERWEIGHT( 25.0), NORMAL;
+    UNDERWEIGHT(18.5), OVERWEIGHT( 25.0), NORMAL;
 
     private double bmi;
 
