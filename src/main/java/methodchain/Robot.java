@@ -11,10 +11,11 @@ public class Robot {
     }
 
     public Robot go(int meter) {
-
+        distance += meter;
+        return this;
     }
 
     public Robot rotate(int angle) {
-
+        return this;
     }
 }
