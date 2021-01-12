@@ -2,31 +2,40 @@ package methodstructure;
 
 public class BodyMass {
 
-    private int weight;
-    private  int height;
+    private double weight;
+    private  double height;
 
-    public BodyMass(int weight, int height) {
+    public BodyMass(double weight, double height) {
         this.weight = weight;
         this.height = height;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
     public double bodyMassIndex() {
-        return (weight / height*height);
+        return (weight / (height*height));
     }
 
     public BmiCategory body() {
-
+        if (bodyMassIndex() < 18.5) {
+            return BmiCategory.UNDERWEIGHT;
+        } else if (bodyMassIndex() > 25) {
+            return BmiCategory.OVERWEIGHT;
+        } else {
+            return BmiCategory.NORMAL;
+        }
     }
 
-    public boolean isThinnerThan(BodyMass) {
-        if (
+    public boolean isThinnerThan(BodyMass bodyMass) {
+        if (bodyMassIndex() < bodyMass.bodyMassIndex()) {
+            return true;
+        }
+        return false;
     }
 }
