@@ -16,6 +16,7 @@ public class Robot {
     }
 
     public Robot rotate(int angle) {
+        azimut += angle;
         return this;
     }
 }
