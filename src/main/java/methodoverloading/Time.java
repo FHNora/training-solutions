@@ -32,4 +32,16 @@ public class Time {
         }
         return false;
     }
+
+    public int getHours() {
+        return hours;
+    }
+
+    public int getMinutes() {
+        return minutes;
+    }
+
+    public int getSeconds() {
+        return seconds;
+    }
 }
