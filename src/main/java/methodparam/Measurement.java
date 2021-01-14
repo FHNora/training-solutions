@@ -21,7 +21,7 @@ public class Measurement {
         double min = values[0];
         for (double m : values) {
             if (m < min) {
-                m = min;
+                min = m;
             }
         }
         return min;
@@ -31,7 +31,7 @@ public class Measurement {
         double max = 0;
         for (double m : values) {
             if (m > max) {
-                m = max;
+                max = m;
             }
         }
         return max;
