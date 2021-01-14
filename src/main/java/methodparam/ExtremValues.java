@@ -2,8 +2,8 @@ package methodparam;
 
 public class ExtremValues {
 
-    private double min;
-    private double max;
+    private final double min;
+    private final double max;
 
     public ExtremValues(double min, double max) {
         this.min = min;
