@@ -27,7 +27,7 @@ public class Time {
     }
 
     public boolean isEqual(Time time) {
-        if (time.equals(time)) {
+        if (this.hours == time.hours) {
             return true;
         }
         return false;
