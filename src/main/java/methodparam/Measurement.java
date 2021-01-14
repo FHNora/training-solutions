@@ -18,7 +18,7 @@ public class Measurement {
     }
 
     public double minimum() {
-        int min = 0;
+        double min = values[0];
         for (double m : values) {
             if (m < min) {
                 m = min;
@@ -28,7 +28,7 @@ public class Measurement {
     }
 
     public double maximum() {
-        int max = 0;
+        double max = 0;
         for (double m : values) {
             if (m > max) {
                 m = max;
@@ -38,6 +38,6 @@ public class Measurement {
     }
 
     public ExtremValues minmax() {
-        return ;
+        return new ExtremValues(minimum(), maximum());
     }
 }
